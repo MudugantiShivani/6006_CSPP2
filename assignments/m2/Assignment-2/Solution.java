@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
 	/**
 	 * { This is the function where we take the inputs }
