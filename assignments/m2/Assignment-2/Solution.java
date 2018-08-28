@@ -4,6 +4,9 @@ import java.util.Scanner;
  * Class for solution.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Constructor
     }
@@ -19,8 +22,6 @@ public final class Solution {
         int c = scan.nextInt();
         rootsOfQuadraticEquation(a, b, c);
     }
-    /*
-    */
     /**
      * {    Need to write the rootsOfQuadraticEquation.
      *      function and print the output. }.
@@ -29,7 +30,7 @@ public final class Solution {
      * @param      b     { type int }
      * @param      c     { type int }
      */
-    public static void  rootsOfQuadraticEquation(final int a,final int b,final int c) {
+    public static void  rootsOfQuadraticEquation(final int a, final int b, final int c) {
         double x;
         double y;
         final int four = 4;
