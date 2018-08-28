@@ -2,6 +2,14 @@ import java.util.Scanner;
 
 public final class Solution {
 	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		/**
+		 * { item_description }.
+		 */
+	}
+	/**
 	 * {This is the function where we write take the inputs}.
 	 *
 	 * @param      args  type is string
@@ -14,7 +22,7 @@ public final class Solution {
 		System.out.println(result);
 	}
 	/**
-	 * {recursion function for power}
+	 * {recursion function for power}.
 	 *
 	 * @param      b     {type int }.
 	 * @param      e     {type int}.
@@ -28,9 +36,4 @@ public final class Solution {
 			return 1;
 		}
 	}
-
-
-	/*
-	Need to write the power function and print the output.
-	*/
 }
