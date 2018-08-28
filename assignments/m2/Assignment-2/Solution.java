@@ -4,8 +4,11 @@ import java.util.Scanner;
  * Class for solution.
  */
 public class Solution {
+    private Solution(){
+        //Constructor
+    }
     /**
-     * { This is the function where we take the inputs }
+     * { This is the function where we take the inputs }.
      *
      * @param      args  is type string
      */
@@ -19,8 +22,8 @@ public class Solution {
     /*
     */
     /**
-     * {    Need to write the rootsOfQuadraticEquation
-     *      function and print the output. }
+     * {    Need to write the rootsOfQuadraticEquation.
+     *      function and print the output. }.
      *
      * @param      a     { type int }
      * @param      b     { type int }
