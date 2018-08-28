@@ -20,7 +20,7 @@ public final class Solution {
         int a = scan.nextInt();
         int b = scan.nextInt();
         int c = scan.nextInt();
-        rootsOfQuadraticEquation(a, b, c);
+        roots(a, b, c);
     }
     /**
      * {    Need to write the rootsOfQuadraticEquation.
@@ -30,7 +30,7 @@ public final class Solution {
      * @param      b     { type int }
      * @param      c     { type int }
      */
-    public static void  rootsOfQuadraticEquation(final int a, final int b, final int c) {
+    public static void  roots(final int a, final int b, final int c) {
         double x;
         double y;
         final int four = 4;
