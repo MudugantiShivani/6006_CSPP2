@@ -3,8 +3,8 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
-    private Solution(){
+public final class Solution {
+    private Solution() {
         //Constructor
     }
     /**
@@ -12,7 +12,7 @@ public class Solution {
      *
      * @param      args  is type string
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
@@ -29,7 +29,7 @@ public class Solution {
      * @param      b     { type int }
      * @param      c     { type int }
      */
-    public static void  rootsOfQuadraticEquation(int a, int b, int c) {
+    public static void  rootsOfQuadraticEquation(final int a,final int b,final int c) {
         double x;
         double y;
         final int four = 4;
