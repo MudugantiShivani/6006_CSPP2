@@ -29,9 +29,10 @@ public class Solution {
     public static void  rootsOfQuadraticEquation(int a, int b, int c) {
         double x;
         double y;
-        x = (-b + Math.sqrt((b * b) - 4 * a * c)) / (2 * a);
+        final int four = 4;
+        x = (-b + Math.sqrt((b * b) - four * a * c)) / (2 * a);
 
-        y = (-b - Math.sqrt((b * b) - 4 * a * c)) / (2 * a);
+        y = (-b - Math.sqrt((b * b) - four * a * c)) / (2 * a);
         System.out.println(x + " " + y);
     }
 }
