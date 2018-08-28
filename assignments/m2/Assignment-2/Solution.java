@@ -23,12 +23,12 @@ public class Solution {
 	 * @param      b     { type int }
 	 * @param      c     { type int }
 	 */
-	public static void  rootsOfQuadraticEquation(int a,int b,int c){
+	public static void  rootsOfQuadraticEquation(int a, int b, int c) {
 		double x;
 		double y;
-		x = (-b + Math.sqrt((b*b)-4*a*c))/(2*a);
+		x = (-b + Math.sqrt((b * b) - 4 * a * c)) / (2 * a);
 
-		y = (-b - Math.sqrt((b*b)-4*a*c))/(2*a);
-		System.out.println(x+" "+y);
+		y = (-b - Math.sqrt((b * b) - 4 * a * c)) / (2 * a);
+		System.out.println(x + " " + y);
 	}
 }
