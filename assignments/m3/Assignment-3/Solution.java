@@ -33,11 +33,10 @@ public final class Solution {
      *
      * @return     { value of the function is returned }
      */
-    public static int gcd(final int i,final int j) {
+    public static int gcd(final int i, final int j) {
         if (j != 0) {
             return gcd(j, i % j);
-        } 
-        else {
+        } else {
             return i;
         }
     }
