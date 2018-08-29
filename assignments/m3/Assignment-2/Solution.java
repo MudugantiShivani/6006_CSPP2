@@ -19,8 +19,8 @@ public final class Solution {
 
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
-        int seven = seven(n);
-        System.out.println(seven);
+        int numberseven = numberseven(n);
+        System.out.println(numberseven);
     }
     /**
      * {Here the function counts number of 7's}.
@@ -28,16 +28,18 @@ public final class Solution {
      * @param      n     { int data type and reads the number}
      * @return     { returns the count of number of 7's }
      */
-    public static int seven(final int n) {
+    public static int numberseven(final int n) {
         int i = 0, j = 1;
         int count = 0;
+        int ten = 10;
+        int seven = 7;
         for (i = 1; i <= n; i++) {
             j = i;
             while (j != 0) {
-                if (j % 10 == 7){
+                if (j % ten == seven) {
                     count++;
                 }
-                j /= 10;
+                j /= ten;
             }
         }
         return count;
