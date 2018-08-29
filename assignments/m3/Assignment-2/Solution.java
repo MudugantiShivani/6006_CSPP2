@@ -34,8 +34,9 @@ public final class Solution {
         for (i = 1; i <= n; i++) {
             j = i;
             while (j != 0) {
-                if (j % 10 == 7)
+                if (j % 10 == 7){
                     count++;
+                }
                 j /= 10;
             }
         }
