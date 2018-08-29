@@ -31,8 +31,8 @@ public final class Solution {
     public static int numberseven(final int n) {
         int i = 0, j = 1;
         int count = 0;
-        int ten = 10;
-        int seven = 7;
+        final int ten = 10;
+        final int seven = 7;
         for (i = 1; i <= n; i++) {
             j = i;
             while (j != 0) {
