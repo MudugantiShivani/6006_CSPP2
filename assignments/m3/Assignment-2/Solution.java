@@ -31,11 +31,11 @@ public final class Solution {
     public static int seven(final int n) {
         int i = 0, j = 1;
         int count = 0;
-        for (i = 1; i <= n; i ++) {
+        for (i = 1; i <= n; i++) {
             j = i;
             while (j != 0) {
                 if (j % 10 == 7)
-                    count ++;
+                    count++;
                 j /= 10;
             }
         }
