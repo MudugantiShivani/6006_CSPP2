@@ -20,14 +20,14 @@ public class Solution {
 	}
 	if (row1==row2 && column1 == column2){
 		int[][] sum = new int [row1][column1];
-		for (int i=0;i<row1;i++){
-			for (int j=0;j<column1;j++){
+		for (int i=0;i<row2;i++){
+			for (int j=0;j<column2;j++){
 			sum[i][j]=arr1[i][j]+arr2[i][j];
 
 		}
 	}
-	for (int i=0;i<row1;i++){
-			for (int j=0;j<column1;j++){
+	for (int i=0;i<row2;i++){
+			for (int j=0;j<column2;j++){
 			System.out.print(sum[i][j]+" ");
 		}
 		System.out.println();
