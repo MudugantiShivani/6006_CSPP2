@@ -44,11 +44,11 @@ public final class Solution {
             }
 
             for (int i = 0; i < row2; i++) {
-                String string1="";
+                String string1 = "";
                 for (int j = 0; j < column2; j++) {
-                    string1 += sum[i][j] +" ";
+                    string1 += sum[i][j] + " ";
                 }
-                System.out.println(string1.substring(0,string1.length()-1));
+                System.out.println(string1.substring(0, string1.length() - 1));
             }
 
         } else {
