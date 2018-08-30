@@ -1,6 +1,22 @@
 import java.util.Scanner;
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		/**
+		 * {This is the private calss}
+		 */
+	}
+	/**
+	 * { addition of matrices function }.
+	 *
+	 * @param      args data type is string
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int row1 = s.nextInt();
 		int column1 = s.nextInt();
