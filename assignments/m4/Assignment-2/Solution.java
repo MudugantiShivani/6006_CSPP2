@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Solution {
 			}
 		}
 		if (row1 == row2 && column1 == column2) {
-			int[][] sum = new int [row1][column1];
+			int[][] sum = new int[row1][column1];
 			for (int i = 0; i < row2; i++) {
 				for (int j = 0; j < column2; j++) {
 					sum[i][j] = arr1[i][j] + arr2[i][j];
