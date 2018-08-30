@@ -1,6 +1,22 @@
-import java.util.*;
-public class Solution {
-    public static void main(String[] args) {
+import java.util.Scanner;
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        /**
+         * {This is a constructor}.
+         */
+    }
+    /**
+     * {In this function we find largest number of array}.
+     *
+     * @param      args string data type
+     */
+    public static void main(final String[] args) {
         int n, largestnumber;
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
