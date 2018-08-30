@@ -28,7 +28,7 @@ public class Solution {
 	}
 	for (int i=0;i<row1;i++){
 			for (int j=0;j<column1;j++){
-			System.out.print(sum[i][j]+" ");
+			System.out.print(sum[i][j]);
 		}
 		System.out.println();
 	}
