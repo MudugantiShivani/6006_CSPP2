@@ -10,7 +10,7 @@ public final class Solution {
         /**
          * {private constructor}.
          */
-    } 
+    }
     /**
      * { function_description }.
      *
