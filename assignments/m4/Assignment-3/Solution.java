@@ -4,19 +4,20 @@ public class Solution {
 		long i = (long) Long.parseLong(s);
 		int b = 0;
 		final int ten = 10;
-		long result = 0;
-		long num = i;
-		while (num > 0) {
-			long x = num % ten;
-			result += x * Math.pow(2, b);
-			num = num / ten;
+		long sum = 0;
+		long y = i;
+		while (y > 0) {
+			long x = y % ten;
+			sum += x * Math.pow(2, b);
+			y = y / ten;
 			b = b + 1;
 		}
-		return result;
+		return sum;
 	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();sc.nextLine();
+		int n = sc.nextInt();
+		sc.nextLine();
 		for (int i = 0; i <= n; i++) {
 			String s = sc.nextLine();
 			long res = binaryToDecimal(s);
