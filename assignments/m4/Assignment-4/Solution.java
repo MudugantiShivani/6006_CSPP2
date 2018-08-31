@@ -33,8 +33,8 @@ public final class Solution {
         String result = "";
         char[] array1 = reverse.toCharArray();
         int len = reverse.length();
-        for (int k = len - 1; k >= 0; k--) {
-            result += array1[k];
+        for (int i = len - 1; i >= 0; i--) {
+            result += array1[i];
         }
         return result;
     }
