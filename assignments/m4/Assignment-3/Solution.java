@@ -17,7 +17,7 @@ public class Solution
 		}
 	}
 	static long binaryToDecimal(String s){
-		long i = Long.parseLong(s);
+		long i = (long) Long.parseLong(s);
         int b = 0;
         final int ten = 10;
         long sum = 0;
