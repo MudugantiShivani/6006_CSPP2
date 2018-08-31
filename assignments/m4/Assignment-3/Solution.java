@@ -3,6 +3,9 @@ import java.util.Scanner;
  * { program to convert binary to decimal}.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         /**
          * {private constructor}.
