@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -16,7 +16,7 @@ public class Solution {
      *
      * @param      args string data type
      */
-    public static void main( final String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String reverseerse = reverseerseString(s);
