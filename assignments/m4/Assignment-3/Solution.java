@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public final class Solution {
     static long binaryToDecimal(final String s) {
-        long i = (long) Long.parseLong(s);
+        long i = Long.parseLong(s);
         int b = 0;
         final int ten = 10;
         long sum = 0;
