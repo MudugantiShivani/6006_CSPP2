@@ -19,8 +19,8 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        String reverseerse = reverseerseString(s);
-        System.out.println(reverseerse);
+        String reverse = reverseString(s);
+        System.out.println(reverse);
     }
     /**
      * {This is the function where we write code for reverse of string}.
@@ -29,7 +29,7 @@ public final class Solution {
      *
      * @return     { returns the reversed string }
      */
-    static String reverseerseString(final String reverse) {
+    static String reverseString(final String reverse) {
         String result = "";
         char[] array1 = reverse.toCharArray();
         int len = reverse.length();
