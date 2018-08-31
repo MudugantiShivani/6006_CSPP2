@@ -1,11 +1,11 @@
 import java.util.Scanner;
 public class Solution {
 	static long binaryToDecimal(final String s) {
-		long binarynum = (long) Long.parseLong(s);
+		long i = (long) Long.parseLong(s);
 		int b = 0;
 		final int ten = 10;
 		long result = 0;
-		long num = binarynum;
+		long num = i;
 		while (num > 0) {
 			long x = num % ten;
 			result += x * Math.pow(2, b);
