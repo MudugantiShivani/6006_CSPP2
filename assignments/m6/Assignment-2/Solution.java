@@ -27,8 +27,8 @@ final class Solution {
         int[][] newmatrix = new int[row][column];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
-                int fifty = 50;
-                int hundred = 100;
+                final int fifty = 50;
+                final int hundred = 100;
                 int newelement = (a[i][j] + fifty) / hundred;
                 newmatrix[i][j] = newelement * hundred;
             }
