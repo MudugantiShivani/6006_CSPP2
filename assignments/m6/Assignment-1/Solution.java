@@ -20,7 +20,7 @@ public final class Solution {
     static void oddComposites(final int n) {
         // write your code here
         for (int i = 2; i < n; i++) {
-            if (i % 2 != 0 ) {
+            if (i % 2 != 0) {
                 int increment = 0;
                 for (int j = 1; j < i; j++) {
                     if (i % j == 0) {
@@ -43,4 +43,5 @@ public final class Solution {
         oddComposites(n);
     }
 }
+
 
