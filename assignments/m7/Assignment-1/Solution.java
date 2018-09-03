@@ -6,7 +6,7 @@ class InputValidator {
     /**
      * { var_description }.
      */
-    String input;
+    private String input;
     /**
      * Constructs the object.
      *
@@ -39,11 +39,6 @@ class InputValidator {
  * Class for solution.
  */
 public class Solution {
-    private Solution(){
-        /**
-         * { item_description }
-         */
-    }
     /**
      * { item_description }
      */
