@@ -40,6 +40,14 @@ class InputValidator {
  */
 public class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+        /**
+         * { item_description }
+         */
+    }
+    /**
      * { item_description }
      */
     public static void main(final String args[]) {
