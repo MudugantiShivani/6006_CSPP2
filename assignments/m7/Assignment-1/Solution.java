@@ -1,10 +1,22 @@
-import java.util.*;
+import java.util.Scanner;
+/**
+ * Class for input validator.
+ */
 class InputValidator {
+	/**
+	 * { var_description }
+	 */
 	String input;
 	InputValidator(String value) {
+		/**
+		 * { item_description }
+		 */
 		this.input  = value;
 	}
 	boolean validateData() {
+		/**
+		 * { var_description }
+		 */
 		String str = this.input;
 		int len = str.length();
 		if (len >= 6) {
@@ -13,7 +25,13 @@ class InputValidator {
 		return false;
 	}
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * { item_description }
+	 */
 	public static void main(String args[]) {
 		Scanner s = new Scanner(System.in);
 		String input = s.next();
