@@ -38,21 +38,21 @@ class InputValidator {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
         /**
-         * { item_description }
+         * { item_description }.
          */
     }
     /**
-     * { item_description }
+     * { item_description }.
      */
     public static void main(final String args[]) {
         /**
-         * { var_description }
+         * { var_description }.
          */
         Scanner s = new Scanner(System.in);
         String input = s.next();
