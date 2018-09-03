@@ -29,7 +29,8 @@ class InputValidator {
          */
         String str = this.input;
         int len = str.length();
-        if (len >= 6) {
+        final int six = 6;
+        if (len >= six) {
             return true;
         }
         return false;
@@ -50,7 +51,7 @@ public final class Solution {
     /**
      * { item_description }.
      */
-    public static void main(final String args[]) {
+    public static void main(final String[] args) {
         /**
          * { var_description }.
          */
