@@ -5,7 +5,6 @@ import java.util.Scanner;
  */
 public class List {
     //Implement all the methods mentioned to build a ListADT
-
     /*
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
@@ -34,9 +33,7 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
-    
     private int[] arr1;
-
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -67,6 +64,9 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
+    /**
+     * Constructs the object.
+     */
     public List() {
 
         // what are the two variables to be initialized here?
@@ -94,7 +94,12 @@ public class List {
      *
      * The method returns void (nothing)
      */
-    public void add(int item) {
+    /**
+     * { add element in the list}.
+     *
+     * @param      item  The item
+     */
+    public void add(final int item) {
         //Inserts the specified element at the end of the list.
 
         arr1[size] = item;
@@ -143,7 +148,7 @@ public class List {
      *
      * @param      index  returns int type.
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if (index < size) {
@@ -176,7 +181,7 @@ public class List {
      *
      * @return     { returns the element }
      */
-    public int get(int index) {
+    public int get(final int index) {
         // Replace the code below to write the code for get
         if (index < size) {
             return arr1[index];
@@ -211,7 +216,7 @@ public class List {
      * @return     String representation of the object.
      */
     public String toString() {
-        int [] list1 = new int[size];
+        int[] list1 = new int[size];
         String str = "[";
         for (int i = 0; i < size - 1; i++) {
             str = str + arr1[i] + ",";
@@ -232,7 +237,7 @@ public class List {
      *
      * @return     { returns boolean value }
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         for (int i = 0; i <= size - 1; i++) {
             if (arr1[i] == item) {
                 return true;
@@ -253,7 +258,7 @@ public class List {
      *
      * @return     {returns the index}
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         for (int i = 0; i <= size - 1; i++) {
             if (arr1[i] == item) {
                 return i;
@@ -266,7 +271,7 @@ public class List {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
