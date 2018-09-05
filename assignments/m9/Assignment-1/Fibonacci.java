@@ -28,15 +28,15 @@ public class Fibonacci {
 	public static List fib(int n) {
 		// todo - complete this method
 		List l = new List(n);
-		int previous_element = 0;
+		int previousElement = 0;
 		int last_element = 1;
-		l.add(previous_element);
+		l.add(previousElement);
 		int temporary = 0;
 		for (int i = 0; l.size < n; i++) {
 			l.add(last_element);
 			temporary = last_element;
-			last_element = last_element + previous_element;
-			previous_element = temporary;
+			last_element = last_element + previousElement;
+			previousElement = temporary;
 		}
 		return l;
 	}
