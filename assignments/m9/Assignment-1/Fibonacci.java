@@ -19,53 +19,53 @@ import java.util.Scanner;
 /**
  * Class for fibonacci.
  */
-public class Fibonacci {
-	/**
-	 * Constructs the object.
-	 */
-	private Fibonacci() {
-		/**
-		 * { item_description }
-		 */
+public final class Fibonacci {
+    /**
+     * Constructs the object.
+     */
+    private Fibonacci() {
+        /**
+         * { item_description }
+         */
 
-	}
-	/*
-	 * fib is a static method takes a argument n
-	 * n is the count of the fibonacci numbers to be generated.
-	 * The method returns a List with the n fibonacci numbers.
-	 *
-	 * Look for the hint.txt if some of the testcases fail.
-	 */
-	/**
-	 * { this function gives the list of fibbonacci numbers}.
-	 *
-	 * @param      n     {number of fibbonacci numbers}
-	 *
-	 * @return     { list of numbers}
-	 */
-	public static List fib(final int n) {
-		// todo - complete this method
-		List l = new List(n);
-		int previousElement = 0;
-		int lastElement = 1;
-		l.add(previousElement);
-		int temporary = 0;
-		for (int i = 0; l.size < n; i++) {
-			l.add(lastElement);
-			temporary = lastElement;
-			lastElement = lastElement + previousElement;
-			previousElement = temporary;
-		}
-		return l;
-	}
-	/**
-	 * This is the main function.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner s = new Scanner(System.in);
-		int n = s.nextInt();
-		System.out.println(fib(n));
-	}
+    }
+    /*
+     * fib is a static method takes a argument n
+     * n is the count of the fibonacci numbers to be generated.
+     * The method returns a List with the n fibonacci numbers.
+     *
+     * Look for the hint.txt if some of the testcases fail.
+     */
+    /**
+     * { this function gives the list of fibbonacci numbers}.
+     *
+     * @param      n     {number of fibbonacci numbers}
+     *
+     * @return     { list of numbers}
+     */
+    public static List fib(final int n) {
+        // todo - complete this method
+        List l = new List(n);
+        int previousElement = 0;
+        int lastElement = 1;
+        l.add(previousElement);
+        int temporary = 0;
+        for (int i = 0; l.size < n; i++) {
+            l.add(lastElement);
+            temporary = lastElement;
+            lastElement = lastElement + previousElement;
+            previousElement = temporary;
+        }
+        return l;
+    }
+    /**
+     * This is the main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        System.out.println(fib(n));
+    }
 }
