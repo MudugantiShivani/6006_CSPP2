@@ -17,34 +17,33 @@ import java.util.Scanner;
  *
  */
 
-public class Fibonacci
-{
-    /*
-     * fib is a static method takes a argument n
-     * n is the count of the fibonacci numbers to be generated.
-     * The method returns a List with the n fibonacci numbers.
-     *
-     * Look for the hint.txt if some of the testcases fail.
-     */
-    public static List fib(int n) {
-        // todo - complete this method
-        List l=new List();
-        int previous_element =0;
-        int last_element =1;
-        l.add(previous_element);
-        int temporary = 0;
-        for (int i=0;l.size<n;i++){
-        	l.add(last_element);
-        	temporary = last_element;
-        	last_element = last_element +previous_element;
-        	previous_element = temporary;
-        }
-        return l;
-    }
+public class Fibonacci {
+	/*
+	 * fib is a static method takes a argument n
+	 * n is the count of the fibonacci numbers to be generated.
+	 * The method returns a List with the n fibonacci numbers.
+	 *
+	 * Look for the hint.txt if some of the testcases fail.
+	 */
+	public static List fib(int n) {
+		// todo - complete this method
+		List l = new List();
+		int previous_element = 0;
+		int last_element = 1;
+		l.add(previous_element);
+		int temporary = 0;
+		for (int i = 0; l.size < n; i++) {
+			l.add(last_element);
+			temporary = last_element;
+			last_element = last_element + previous_element;
+			previous_element = temporary;
+		}
+		return l;
+	}
 
 	public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
-        System.out.println(fib(n));
-    }
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		System.out.println(fib(n));
+	}
 }
