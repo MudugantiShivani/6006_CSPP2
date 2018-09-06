@@ -159,9 +159,9 @@ public class List {
 		return size;
 	}
 	private int[] resize() {
-        list = Arrays.copyOf(list, 2 * list.length);
-        return list;
-	        }
+		list = Arrays.copyOf(list, 2 * list.length);
+		return list;
+	}
 
 	/*
 	 * The remove method does what the name suggests.
@@ -188,6 +188,9 @@ public class List {
 		// write the logic for remove here.
 		// Think about what to do to the size variable.
 		if (index >= 0 && index < size) {
+			if(list[index]==0){
+				System.out.println("Negative Index Exception");
+			}
 			for (int i = index; i < size - 1; i++) {
 				list[i] = list[i + 1];
 			}
@@ -274,13 +277,13 @@ public class List {
 	 array to the end of list*/
 	public void addAll(int items[]) {
 		int i, j;
-        for (i = size, j = 0; j < items.length; i++, j++) {
-            if (size == list.length) {
-                resize();
-            }
-            list[i] = items[j];
-            size += 1;
-        }
+		for (i = size, j = 0; j < items.length; i++, j++) {
+			if (size == list.length) {
+				resize();
+			}
+			list[i] = items[j];
+			size += 1;
+		}
 	}
 
 	/*
@@ -290,16 +293,16 @@ public class List {
 	    */
 	public void add(int index, int item) {
 		if (index < 0) {
-            System.out.println("Negative Index Exception");
-        } else {
-            if (size == list.length) {
-                resize();
-            }
-            for (int i = size; i >= index; i--) {
-                list[i + 1] = list[i];
-            } list[index] = item;
-            size += 1;
-        }
+			System.out.println("Negative Index Exception");
+		} else {
+			if (size == list.length) {
+				resize();
+			}
+			for (int i = size; i >= index; i--) {
+				list[i + 1] = list[i];
+			} list[index] = item;
+			size += 1;
+		}
 	}
 
 	/* Returns the count of occurances of a given item in the list*/
