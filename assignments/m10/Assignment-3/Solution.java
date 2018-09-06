@@ -52,7 +52,7 @@ class Student {
     }
     /**.
      * Returns a string representation of the object.
-     * @return     String 
+     * @return     String
      */
     public String toString() {
         return this.name;
