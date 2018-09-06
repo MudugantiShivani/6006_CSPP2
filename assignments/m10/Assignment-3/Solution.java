@@ -108,8 +108,8 @@ public class Solution {
                     System.out.println(listString.indexOf(tokens[1]));
                     break;
                 case "get":
-                    System.out.println(listString.get(Integer.parseInt
-                        (tokens[1])));
+                    System.out.println(listString.get(Integer.parseInt(
+                        tokens[1])));
                     break;
                 case "contains":
                     System.out.println(listString.contains(tokens[1]));
