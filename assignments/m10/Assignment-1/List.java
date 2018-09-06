@@ -35,6 +35,9 @@ public class List {
 
 
     private int[] list;
+    /**
+     * { list is defined as private}.
+     */
 
     /*
      * What are the other class variables needed for creating a list?
@@ -60,6 +63,9 @@ public class List {
     // again, don't initialize it here
     // variable initialization should be done in the constructor
     private int size;
+    /**
+     * { size is defined as private}.
+     */
 
     /*
      * The purpose of the constructor is to initialize the
@@ -78,7 +84,7 @@ public class List {
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        int ten=10;
+        int ten = 10;
         list = new int[ten];
 
         // Think about the initial value for size.
@@ -189,7 +195,7 @@ public class List {
     public int size() {
         return size;
     }
-    
+
 
     /*
      * The remove method does what the name suggests.
@@ -334,9 +340,9 @@ public class List {
     }
     /*Inserts all the elements of specified int
      array to the end of list*/
-     /**
-      * {adds all the elements given}.
-      */
+    /**
+     * {adds all the elements given}.
+     */
     public void addAll(int items[]) {
         int i, j;
         for (i = size, j = 0; j < items.length; i++, j++) {
@@ -353,12 +359,12 @@ public class List {
     by moving all the elements to the right.
            The method returns void (nothing)
         */
-           /**
-            * {add the given element}.
-            *
-            * @param      index  data type int
-            * @param      item   data type int
-            */
+    /**
+     * {add the given element}.
+     *
+     * @param      index  data type int
+     * @param      item   data type int
+     */
     public void add(int index, int item) {
         if (index < 0) {
             System.out.println("Negative Index Exception");
