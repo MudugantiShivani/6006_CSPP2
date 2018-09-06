@@ -188,7 +188,7 @@ public final class Solution {
                 case "addAll":
                     if (tokens.length == 2) {
                         String[] t1 = tokens[1].split(",");
-                        Float temp[] = new Float[t1.length];
+                        Float[] temp = new Float[t1.length];
                         for (int i = 0; i < t1.length; i++) {
                             temp[i] = Float.parseFloat(t1[i]);
                         }
@@ -267,8 +267,8 @@ public final class Solution {
                     listCharacter.remove(Integer.parseInt(tokens[1]));
                     break;
                 case "indexOf":
-                    System.out.println(listCharacter.indexOf
-                                       (tokens[1].charAt(0)));
+                    System.out.println(listCharacter.indexOf(
+                        tokens[1].charAt(0)));
                     break;
                 case "get":
                     System.out.println(listCharacter.get(Integer.parseInt(
@@ -379,16 +379,16 @@ public final class Solution {
                     listStudent.remove(Integer.parseInt(tokens[1]));
                     break;
                 case "indexOf":
-                    System.out.println(listStudent.indexOf(new Student
-                                                           (tokens[1])));
+                    System.out.println(listStudent.indexOf(new Student(
+                        tokens[1])));
                     break;
                 case "get":
                     System.out.println(listStudent.get(Integer.parseInt(
                                                            tokens[1])));
                     break;
                 case "contains":
-                    System.out.println(listStudent.contains(new Student
-                                                            (tokens[1])));
+                    System.out.println(listStudent.contains(new Student(
+                        tokens[1])));
                     break;
                 default:
                 }
