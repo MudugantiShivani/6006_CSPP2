@@ -52,7 +52,6 @@ class Student {
     }
     /**.
      * Returns a string representation of the object.
-     *
      * @return     String 
      */
     public String toString() {
@@ -419,3 +418,4 @@ public final class Solution {
         }
     }
 }
+
