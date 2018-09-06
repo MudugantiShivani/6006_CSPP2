@@ -11,11 +11,11 @@ class Student {
     /**
      * Constructs the object.
      *
-     * @param      name  The name
+     * @param      name1  The name
      */
-    public Student(final String name) {
+    Student(final String name1) {
         //A constructor used to initialize the instance variables
-        this.name = name;
+        this.name = name1;
     }
     /**
      * Gets the name.
@@ -36,6 +36,10 @@ class Student {
 
         Student that = (Student) other;
         return this.getName().equals(that.getName());
+    }
+    @Override
+    public int hashCode() {
+        return 0;
     }
     /**
      * Returns a string representation of the object.
