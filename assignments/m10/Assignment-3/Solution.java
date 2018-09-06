@@ -4,9 +4,16 @@ import java.util.Scanner;
  * Class for student.
  */
 class Student {
+    /**
+     * { name returns string data type }.
+     */
     private String name;
-
-    public Student(String name) {
+    /**
+     * Constructs the object.
+     *
+     * @param      name  The name
+     */
+    public Student(final String name) {
         //A constructor used to initialize the instance variables
         this.name = name;
     }
