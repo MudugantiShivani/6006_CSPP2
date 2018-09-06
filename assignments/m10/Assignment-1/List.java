@@ -335,10 +335,9 @@ public class List {
         }
         return -1;
     }
-    /*Inserts all the elements of specified int
-     array to the end of list*/
     /**
      * {adds all the elements given}.
+     * @param      items  data type int
      */
     public void addAll(final int items[]) {
         int i, j;
@@ -362,7 +361,7 @@ public class List {
      * @param      index  data type int
      * @param      item   data type int
      */
-    public void add(int index, int item) {
+    public void add(final int index, final int item) {
         if (index < 0) {
             System.out.println("Negative Index Exception");
         } else {
@@ -394,7 +393,7 @@ public class List {
         return count;
     }
     /**
-     * { main function }
+     * { main function }.
      *
      * @param      args  str data type
      */
@@ -418,8 +417,9 @@ public class List {
                     if (t.length == 1) {
                         l.add(Integer.parseInt(tokens[1]));
                     } else {
-                        if (t.length > 1)
-                            l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
+                        if (t.length > 1){
+                         l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
+                        }
                     }
                 }
                 break;
@@ -430,8 +430,9 @@ public class List {
                 if (tokens.length == 2) {
                     String[] t1 = tokens[1].split(",");
                     int temp[] = new int[t1.length];
-                    for (int i = 0; i < temp.length; i++)
+                    for (int i = 0; i < temp.length; i++){
                         temp[i] = Integer.parseInt(t1[i]);
+                    }
                     l.addAll(temp);
                 }
                 break;
