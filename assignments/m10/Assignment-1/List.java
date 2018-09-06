@@ -61,13 +61,10 @@ public class List {
     /**
      * { size is declared as private }.
      */
-    
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
     private int size;
-    
-
     /*
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
@@ -75,9 +72,6 @@ public class List {
     /**
      * Constructs the object.
      */
-
-
-
     public List() {
 
         // what are the two variables to be initialized here?
