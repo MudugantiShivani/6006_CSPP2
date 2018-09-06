@@ -28,6 +28,9 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
+    /**
+     * { list is defined as private }.
+     */
 
     // declare a private int[]
     // don't create the array yet using new
@@ -35,9 +38,6 @@ public class List {
 
 
     private int[] list;
-    /**
-     * { list is defined as private}.
-     */
 
     /*
      * What are the other class variables needed for creating a list?
@@ -58,14 +58,15 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      *
      */
-
+    /**
+     * { size is declared as private }.
+     */
+    
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
     private int size;
-    /**
-     * { size is defined as private}.
-     */
+    
 
     /*
      * The purpose of the constructor is to initialize the
@@ -84,7 +85,7 @@ public class List {
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        int ten = 10;
+        final int ten = 10;
         list = new int[ten];
 
         // Think about the initial value for size.
@@ -134,7 +135,7 @@ public class List {
      *
      * @param      item  int data type
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the zelist.
         list[size++] = item;
     }
@@ -158,7 +159,7 @@ public class List {
      * with the contents of the original array.
      *
      * TODO
-     * Create a method called resize(). Resize should create an new array that is
+     * Create a method called resize(). Resize should create an new array is
      * double the size of the old array.
      * Then copy the contents of the old array to the new one.
      *
@@ -166,7 +167,7 @@ public class List {
      * Will the client invoke resize or is it internal to List class?
      * Should the resize be public method or private?
      * Should the resize method return any values?
-     * You know enough of Object Oriented Programming to answer these questions :-)
+     * You know enough Object Oriented Programming to answer these questions
      *
      */
     /**
@@ -223,7 +224,7 @@ public class List {
      * @param      index  int data type
      */
 
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if (index >= 0 && index < size) {
@@ -257,7 +258,7 @@ public class List {
      *
      * @return     { returns the number in the list }
      */
-    public int get(int index) {
+    public int get(final int index) {
         if (index < 0 || index >= size) {
             return -1;
         } else {
@@ -291,8 +292,9 @@ public class List {
      * @return     String representation of the object.
      */
     public String toString() {
-        if (size == 0)
+        if (size == 0){
             return "[]";
+        }
         String str = "[";
         int i = 0;
         for (i = 0; i < size - 1; i++) {
@@ -315,7 +317,7 @@ public class List {
      *
      * @return     { returns the boolean value }
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         return indexOf(item) == -1;
     }
 
@@ -331,10 +333,11 @@ public class List {
      *
      * @return     { returns the index value of the item }
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
-            if (item == list[i])
+            if (item == list[i]){
                 return i;
+            }
         }
         return -1;
     }
@@ -343,7 +346,7 @@ public class List {
     /**
      * {adds all the elements given}.
      */
-    public void addAll(int items[]) {
+    public void addAll(final int items[]) {
         int i, j;
         for (i = size, j = 0; j < items.length; i++, j++) {
             if (size == list.length) {
@@ -387,7 +390,7 @@ public class List {
      *
      * @return     { returns the count of variable}
      */
-    public int count(int item) {
+    public int count(final int item) {
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
@@ -462,6 +465,7 @@ public class List {
             case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
+            default:
             }
         }
     }
