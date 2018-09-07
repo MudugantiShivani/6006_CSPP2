@@ -126,7 +126,7 @@ public class List {
         // write the logic for remove here. Think about what to do to the size
         // variable.
         if (index >= 0 && index <= size) {
-            for (int i = index; i <size-1; i++) {
+            for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
             }
             size--;
@@ -218,10 +218,10 @@ public class List {
     */
     public void removeAll(int[] newArray) {
         for (int i = 0; i < newArray.length; i++) {
-            int index=indexOf(newArray[i]);
-            while(index!=-1){
+            int index = indexOf(newArray[i]);
+            while (index != -1) {
                 remove(index);
-                index=indexOf(newArray[i]);
+                index = indexOf(newArray[i]);
             }
         }
     }
@@ -237,31 +237,28 @@ public class List {
         if (start < 0 || end < 0 || start > end) {
             System.out.println("Index Out of Bounds Exception");
             return null;
-        } 
-        if(start > size||end > size){
+        }
+        if (start > size || end > size) {
             System.out.println("Index Out of Bounds Exception");
             return null;
         }
-        if(start==end&&start>=size){
+        if (start == end && start >= size) {
             System.out.println("Index Out of Bounds Exception");
             return null;
 
         }
-            List list1 = new List();
-            for (int i = start; i < end ; i++) {
-                list1.add(list[i]);
-            }
-            return list1;
-        
+        List list1 = new List();
+        for (int i = start; i < end ; i++) {
+            list1.add(list[i]);
+        }
+        return list1;
+
     }
     /*
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
     public boolean equals(List list ) {
-        // if (this == list) {
-        //      return true;
-        // }
         return toString().equals(list.toString());
     }
     /*
