@@ -2,11 +2,11 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
 /**
- * List of all the functions.
+ * List of .
  */
-public final class List {
+public class List {
     //Implement all the methods mentioned to build a ListADT
-    
+
     /*
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
@@ -28,14 +28,17 @@ public final class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
+    /**
+     * { list is defined as private }.
+     */
+
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
+
+
     private int[] list;
-    /**
-     * {list declaration}.
-     */
+
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -55,17 +58,16 @@ public final class List {
      * to be accessed by the methods that are outside of the List class.
      *
      */
-
+    /**
+     * { size is declared as private }.
+     */
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
     private int size;
-    /**
-     * {declares size}.
-     */
     /*
-     * The purpose of the constructor is to initialize the class variables with
-     * some default values.
+     * The purpose of the constructor is to initialize the
+     * class variables with some default values.
      */
     /**
      * Constructs the object.
