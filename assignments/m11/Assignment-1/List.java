@@ -427,7 +427,7 @@ public class List {
                     l.removeAll(a);
                 }
                 break;
-            case "subList": 
+            case "subList":
                 if (tokens.length != 2) {
                     break;
                 }
