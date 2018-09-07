@@ -334,7 +334,7 @@ public class List {
     /**
      * {gives the boolean value if the strings match}.
      *
-     * @param      list  The list
+     * @param      list1 The list
      *
      * @return     { returns the boolean value }
      */
