@@ -7,15 +7,23 @@ import java.util.Arrays;
  * @author : 20186006
  */
 class Set {
+    
     //your code goes here...
     //Good luck :-)
     private int[] list;
+    /**
+     * { private object}.
+     */
     private int size;
+    /**
+     * { private object}.
+     */
     /**
      * Constructs the object.
      */
     public Set() {
-        list = new int[100];
+        int hundred = 100;
+        list = new int[hundred];
         size = 0;
    }
     
