@@ -4,13 +4,16 @@ import java.util.Arrays;
 
 /**
  * Class for set.
- * @author : 
+ * @author : 20186006
  */
 class Set {
     //your code goes here...
     //Good luck :-)
-    int[] list;
-    int size;
+    private int[] list;
+    private int size;
+    /**
+     * Constructs the object.
+     */
     public Set() {
         list = new int[100];
         size = 0;
@@ -81,7 +84,7 @@ class Set {
         }
         return s1;
     }
-    
+
     public Set  retainAll(int[] item) {
         Set s1 = new Set();
         for (int element : list) {
