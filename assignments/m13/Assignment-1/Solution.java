@@ -7,7 +7,6 @@ import java.util.Arrays;
  * @author : 20186006
  */
 class Set {
-    
     //your code goes here...
     //Good luck :-)
     private int[] list;
