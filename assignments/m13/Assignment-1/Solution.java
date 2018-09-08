@@ -19,12 +19,15 @@ class Set {
     public int size() {
         return size;
     }
+
     public void resize() {
         list = Arrays.copyOf(list, list.length * 2);
     }
+
     public boolean contains(int item) {
         return indexOf(item) != -1;
     }
+
     public int indexOf(int item) {
         for(int i = 0; i < size; i++) {
             if(item == list[i])
@@ -32,17 +35,20 @@ class Set {
         }
         return -1;
     }
+
     public void add(int item) {
         if (size == list.length) {
             resize();
         }
         list[size++] = item;
     }
+
     public void add(final int[] item) {
         for (int i = 0; i < item.length; i++) {
             add(item[i]);
         }
     }
+
     public String toString() {
 
         if (size == 0) {
@@ -56,10 +62,12 @@ class Set {
         str = str + list[i] + "}";
         return str;
     }
+
     public int get(final int index) {
         return list[index];
         
     }
+
     public Set intersection(Set set1)
     {
         Set s1 = new Set();
@@ -73,6 +81,7 @@ class Set {
         }
         return s1;
     }
+    
     public Set  retainAll(int[] item) {
         Set s1 = new Set();
         for (int element : list) {
