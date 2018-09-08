@@ -110,11 +110,11 @@ class Set {
     //     Set t = new Set();
     //     int n1 = s1.length;
     //     int n2 = t.length;
-    //     { 
-    //     for (int i = 0; i < n1; i++) 
-    //       for (int j = 0; j < n2; j++) 
+    //     {
+    //     for (int i = 0; i < n1; i++)
+    //       for (int j = 0; j < n2; j++)
     //         System.out.print("{"+ s1[i]+", "
-    //                          + t[j]+"}, "); 
+    //                          + t[j]+"}, ");
     // }
     // }
 
@@ -206,7 +206,8 @@ public final class Solution {
                 // s.add(intArray);
                 // intArray = intArray(tokens[2]);
                 // t.add(intArray);
-                // System.out.println(Arrays.deepToString(s.cartesianProduct(t)));
+                // System.out.println(Arrays.deepToString(s.cartesianProduct(
+                // t)));
                 // break;
                 default:
                 break;
