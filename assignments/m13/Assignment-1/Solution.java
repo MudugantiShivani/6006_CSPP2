@@ -22,7 +22,7 @@ class Set {
      * Constructs the object.
      */
     public Set() {
-        int hundred = 100;
+        final int hundred = 100;
         list = new int[hundred];
         size = 0;
    }
