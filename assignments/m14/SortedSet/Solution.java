@@ -60,11 +60,11 @@ class Set {
      * @return     String representation of the object.
      */
     public String toString() {
-        if (size == 0){
+        if (size == 0) {
             return "{}";
         }
         String str = "{";
-        for (int index =0; index < size - 1; index++){
+        for (int index = 0; index < size - 1; index++) {
             str += set[index] + ", ";
         }
         return str + set[size - 1] + "}";
@@ -75,17 +75,17 @@ class Set {
      * @param      item  The item
      */
     public void add(final int item) {
-        int flag =0;
-        if (size ==set.length) {
+        int flag = 0;
+        if (size == set.length) {
             resize();
         }
         if (size >= 0) {
-            for (int index = 0; index < size; index++){
-                if (item == set[index]){
+            for (int index = 0; index < size; index++) {
+                if (item == set[index]) {
                     flag = 1;
                 }
             }
-            if (flag == 0){
+            if (flag == 0) {
                 int i, j = 0, count = 0;
                 if (size > 0) {
                     for (i = 0; i < size; i++) {
@@ -109,7 +109,7 @@ class Set {
      * @param      items  The items
      */
     public void add(final int[] items) {
-        for (int index = 0; index <items.length; index++) {
+        for (int index = 0; index < items.length; index++) {
             add(items[index]);
         }
     }
@@ -123,7 +123,7 @@ class Set {
     public Set intersection(final Set setObject) {
         Set s1 = new Set(setObject.size);
         for (int index = 0; index < size; index++) {
-            if (setObject.contains(set[index])){
+            if (setObject.contains(set[index])) {
                 s1.add(set[index]);
             }
         }
@@ -141,7 +141,7 @@ class Set {
         Set s1 = new Set();
         for (int index = 0; index < size; index++) {
             for (int j = 0; j < items.length; j++) {
-                if (set[index] == items[j]){
+                if (set[index] == items[j]) {
                     s1.add(items[j]);
                 }
             }
@@ -155,7 +155,7 @@ class Set {
      *
      * @return     returns the cartesian product.
      */
-    public int[][] cartesianProduct(final Set obj){
+    public int[][] cartesianProduct(final Set obj) {
         if (size == 0 || obj.size == 0) {
             return null;
         }
@@ -165,7 +165,7 @@ class Set {
         while (k < newArray.length) {
             for (int index = 0; index < size; index++) {
                 temp = new int[2];
-                for (int j = 0; j < obj.size; j++){
+                for (int j = 0; j < obj.size; j++) {
                     newArray[k][0] = this.set[index];
                     newArray[k][1] = obj.set[j];
                     k++;
@@ -181,8 +181,8 @@ class Set {
      *
      * @return     { description_of_the_return_value }
      */
-    public int get(final int item){
-        for (int i = 0; i < size; i++){
+    public int get(final int item) {
+        for (int i = 0; i < size; i++) {
             if (item == set[i]) {
                 return i;
             }
@@ -192,7 +192,7 @@ class Set {
     /**.
      * this function resize the array.
      */
-    private void resize(){
+    private void resize() {
         set = Arrays.copyOf(set, 2 * size);
     }
 
@@ -200,7 +200,7 @@ class Set {
 /**
  * Class for sorted set.
  */
-class SortedSet extends Set{
+class SortedSet extends Set {
     /**.
      * { function_description }.
      *
@@ -239,7 +239,7 @@ class SortedSet extends Set{
             return "{}";
         }
         String str = "{";
-        for (int index =0; index < size - 1; index++) {
+        for (int index = 0; index < size - 1; index++) {
             str += set[index] + ", ";
         }
         return str + set[size - 1] + "}";
@@ -252,7 +252,7 @@ class SortedSet extends Set{
     @Override
     public void add(final int item) {
         int flag = 0;
-        if (size == set.length){
+        if (size == set.length) {
             resize();
         }
         if (size >= 0) {
@@ -261,7 +261,7 @@ class SortedSet extends Set{
                     flag = 1;
                 }
             }
-            if (flag == 0){
+            if (flag == 0) {
                 int i, j = 0, count = 0;
                 if (size > 0) {
                     for (i = 0; i < size; i++) {
@@ -284,7 +284,7 @@ class SortedSet extends Set{
      * @return     { description_of_the_return_value }
      */
 
-    public int last(){
+    public int last() {
         if (size == 0) {
             System.out.println("Set Empty Exception");
             return -1;
@@ -300,7 +300,7 @@ class SortedSet extends Set{
      * @return     { description_of_the_return_value }
      */
     public int[] subSet(final int start, final int end) {
-        if (size == 0){
+        if (size == 0) {
             int[] subSet = new int[0];
             return subSet;
         }
@@ -332,7 +332,7 @@ class SortedSet extends Set{
      * @return     { description_of_the_return_value }
      */
     public int start(final int start1) {
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             if (start1 <= set[i]) {
                 return i;
             }
@@ -373,7 +373,7 @@ class SortedSet extends Set{
             return temp;
         }
         int[] temp = new int[a];
-        for (int i = 0; i < a; i++){
+        for (int i = 0; i < a; i++) {
             temp[i] = set[i];
         }
         return temp;
@@ -382,7 +382,7 @@ class SortedSet extends Set{
 /**
  * Solution class for code-eval.
  */
-public final class Solution{
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -396,7 +396,7 @@ public final class Solution{
      *
      * @return     { int array from the given string }
      */
-    public static int[] intArray(final String str){
+    public static int[] intArray(final String str) {
         String input = str;
         if (input.equals("[]")) {
             return new int[0];
@@ -413,7 +413,7 @@ public final class Solution{
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args){
+    public static void main(final String[] args) {
         // instantiate this set
         SortedSet s = new SortedSet();
         // code to read the test cases input file
@@ -465,7 +465,7 @@ public final class Solution{
                     System.out.println("{}");
                     break;
                 }
-                for (in = 0; in < temp2.length - 1; in++){
+                for (in = 0; in < temp2.length - 1; in++) {
                     str1 += temp2[in] + ", ";
                 }
                 str1 += temp2[temp2.length - 1] + "}";
