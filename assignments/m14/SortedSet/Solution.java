@@ -347,7 +347,7 @@ class SortedSet extends Set {
      *
      * @return     { description_of_the_return_value }
      */
-    public int end (final int end1) {
+    public int end(final int end1) {
         for (int i = size - 1; i >= 0; i--) {
             if (end1 >= set[i]) {
                 if (end1 > set[i]) {
