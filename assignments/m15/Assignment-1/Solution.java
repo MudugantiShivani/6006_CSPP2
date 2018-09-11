@@ -316,7 +316,7 @@ final class Solution {
      *
      * @return     { returns the sublist}.
      *
-     * @throws     InvalidIndex{throws the exception if the index is not valid}
+     * @throws     InvalidIndex  {throws the exception if index is not valid}
      */
     public Solution subList(final int start, final int end)
     throws InvalidIndex {
