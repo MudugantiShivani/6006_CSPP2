@@ -1,12 +1,28 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Exception for signaling invalid sub selection errors.
+ */
 class InvalidSubSelectionException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { string data type }
+     */
     InvalidSubSelectionException(final String s) {
         super(s);
     }
 }
+/**
+ * Exception for signaling emptyset errors.
+ */
 class EmptysetException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { data type is string}
+     */
     EmptysetException(final String s) {
         super(s);
     }
@@ -56,7 +72,8 @@ class SortedSet extends Set {
     public int[] subSet(final int start, final int end) throws
     InvalidSubSelectionException {
         if (start > end) {
-            throw new InvalidSubSelectionException("Invalid Arguments to Subset Exception");
+            throw new InvalidSubSelectionException
+            ("Invalid Arguments to Subset Exception");
         }
         int[] result = new int[size];
         int k = 0;
