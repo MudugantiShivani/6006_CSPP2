@@ -1,12 +1,28 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Exception for signaling invalid position errors.
+ */
 class InvalidPositionException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { refers to the string we have passed }
+     */
     InvalidPositionException(final String s) {
         super(s);
     }
 }
+/**
+ * Class for invalid index.
+ */
 class InvalidIndex extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { The input given will be a string }
+     */
     InvalidIndex(final String s) {
         super(s);
     }
