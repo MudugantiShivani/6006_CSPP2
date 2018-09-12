@@ -162,9 +162,8 @@ class BookYourShow {
         }
         return null;
     }
-    
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      movie     The movie
      * @param      showTime  The show time
@@ -193,9 +192,8 @@ class BookYourShow {
         }
         // System.out.println(ticketList);
     }
-    
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      movie     The movie
      * @param      showTime  The show time
