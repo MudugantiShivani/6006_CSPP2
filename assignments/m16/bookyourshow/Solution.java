@@ -62,7 +62,11 @@ class Show {
     void setSeatNA(final int index) {
         seats[index] = "N/A";
     }
-    
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return movie + "," + showTime;
     }
@@ -79,7 +83,12 @@ class Patron {
      * { Mobile no }.
      */
     private String mobile;
-    
+    /**
+     * Constructs the object.
+     *
+     * @param      names    The names
+     * @param      mobiles  The mobiles
+     */
     Patron(final String names, final String mobiles) {
         this.name = names;
         this.mobile = mobiles;
@@ -100,7 +109,11 @@ class Patron {
     String getMobile() {
         return mobile;
     }
-    
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return name + " " + mobile;
     }
@@ -132,7 +145,14 @@ class BookYourShow {
     void addAShow(final Show show) {
         showList.add(show);
     }
-    
+    /**
+     * Gets a show.
+     *
+     * @param      movie     The movie
+     * @param      showTime  The show time
+     *
+     * @return     A show.
+     */
     Show getAShow(final String movie, final  String showTime) {
         for (Show show : showList) {
             if (show.getMovie().equals(movie)
@@ -143,7 +163,14 @@ class BookYourShow {
         return null;
     }
     
-
+    /**
+     * { function_description }
+     *
+     * @param      movie     The movie
+     * @param      showTime  The show time
+     * @param      patron    The patron
+     * @param      seats     The seats
+     */
     void bookAShow(final String movie, final  String showTime,
                    final Patron patron, final String[] seats) {
         Show show = getAShow(movie, showTime);
@@ -167,7 +194,13 @@ class BookYourShow {
         // System.out.println(ticketList);
     }
     
-
+    /**
+     * { function_description }
+     *
+     * @param      movie     The movie
+     * @param      showTime  The show time
+     * @param      mobile    The mobile
+     */
     void printTicket(final String movie, final String showTime,
                      final String mobile) {
         String t = mobile + " " + movie + " " + showTime;
