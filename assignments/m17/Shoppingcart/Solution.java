@@ -1,5 +1,13 @@
 import java.util.Scanner;
+/**
+ * {This is the  class whwre we write the main function}.
+ */
 final class Solution {
+    /**
+     * { Main function}.
+     *
+     * @param      args  String data type.
+     */
     public static void main(final String[] args) {
         ShoppingCart shop = new ShoppingCart();
         Scanner sc = new Scanner(System.in);
