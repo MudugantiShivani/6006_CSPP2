@@ -4,6 +4,14 @@ import java.util.Scanner;
  */
 final class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+        /**
+         * { private constructor }.
+         */
+    }
+    /**
      * { Main function}.
      *
      * @param      args  String data type.
