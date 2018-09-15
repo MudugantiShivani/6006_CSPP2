@@ -102,7 +102,7 @@ public final class Solution {
                 element[i] = Integer.parseInt(token[1]);
                 System.out.println(quizquestions[i].getQuestion() + "(" + quizquestions[i].getMarks() + ")");
                 System.out.println(choices[0] + "        " + choices[1] + "        " + choices[2] + "        " + choices[3]);
-                System.out.println();
+                //System.out.println();
             }
         }
     }
