@@ -122,7 +122,7 @@ public final class Solution {
                     finalscore += quizquestions[i].getMarks();
                     System.out.println(" Correct Answer! - Marks Awarded: " + quizquestions[i].getMarks());
                 } else {
-                    //finalscore += quizquestions[i].getPenalty();
+                    finalscore += quizquestions[i].getPenalty();
                     System.out.println(" Wrong Answer! - Penalty: " + quizquestions[i].getPenalty());
                 }
             }
