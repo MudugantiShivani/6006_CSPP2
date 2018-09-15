@@ -114,19 +114,19 @@ public final class Solution {
      */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
-        int total = 0;
+        int finalscore = 0;
         if (size > 0) {
             for (int i = 0; i < size; i++) {
                 System.out.println(quizquestions[i].getQuestion());
                 if (element[i] == quizquestions[i].getCorrect()) {
-                    total += quizquestions[i].getMarks();
+                    finalscore += quizquestions[i].getMarks();
                     System.out.println(" Correct Answer! - Marks Awarded: " + quizquestions[i].getMarks());
                 } else {
-                    total += quizquestions[i].getPenalty();
+                    finalscore += quizquestions[i].getPenalty();
                     System.out.println(" Wrong Answer! - Penalty: " + quizquestions[i].getPenalty());
                 }
             }
-            System.out.print("Total Score: " + total);
+            System.out.print("Total Score: " + finalscore);
         }
     }
 }
