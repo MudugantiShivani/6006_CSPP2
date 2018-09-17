@@ -241,20 +241,20 @@ public final class Solution {
             // read the line
             String line = s.nextLine();
             // split the line using space
-            String[] tokens = line.split(" ");
+            String[] tokens1 = line.split(" ");
             // based on the list operation invoke the corresponding method
-            switch (tokens[0]) {
+            switch (tokens1[0]) {
             case "LOAD_QUESTIONS":
                 System.out.println("|----------------|");
                 System.out.println("| Load Questions |");
                 System.out.println("|----------------|");
-                loadQuestions(s, q, Integer.parseInt(tokens[1]));
+                loadQuestions(s, q, Integer.parseInt(tokens1[1]));
                 break;
             case "START_QUIZ":
                 System.out.println("|------------|");
                 System.out.println("| Start Quiz |");
                 System.out.println("|------------|");
-                startQuiz(s, q, Integer.parseInt(tokens[1]));
+                startQuiz(s, q, Integer.parseInt(tokens1[1]));
                 break;
             case "SCORE_REPORT":
                 System.out.println("|--------------|");
