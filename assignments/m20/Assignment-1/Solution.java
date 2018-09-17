@@ -199,7 +199,7 @@ public final class Solution {
     /**
      * {initialisng the int}.
      */
-    final static int TEN = 20;
+    final public static int TEN = 20;
     /**
      * { array for question text }.
      */
