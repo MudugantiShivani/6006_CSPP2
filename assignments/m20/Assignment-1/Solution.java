@@ -268,7 +268,10 @@ public final class Solution {
                 } else if (tokens.length < 5|| tokens[0].length() == 0) {
                     System.out.println("Error! Malformed question");
                     return;
-                }
+                } else if (Integer.parseInt(tokens[4]) > 0) {
+                    System.out.println("Invalid penalty for " + tokens[0]);
+                    return;
+                } 
                 questiontext[count] = new Question(tokens[0], choice, Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]));
                 count += 1;
         }
