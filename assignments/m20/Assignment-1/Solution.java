@@ -198,11 +198,11 @@ public final class Solution {
     /**
      * {initialisng the int}.
      */
-    final private static int TWENTY = 20;
+    final private static int ten = 20;
     /**
      * { array for question text }.
      */
-    private static Question[] questiontext = new Question[TWENTY];
+    private static Question[] questiontext = new Question[ten];
     /**
      * { count variable }.
      */
@@ -279,7 +279,7 @@ public final class Solution {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
-        final int FIVE = 5, FOUR = 4, THREE = 3;
+        final int five = 5, four = 4, three = 3;
         Question question;
         if (q == 0) {
             System.out.println("Quiz does not have questions");
@@ -292,24 +292,25 @@ public final class Solution {
                     System.out.println(tokens[0]
                         + " does not have enough answer choices");
                     return;
-                } else if (tokens.length < FIVE || tokens[0].length() == 0) {
+                } else if (tokens.length < five || tokens[0].length() == 0) {
                     System.out.println("Error! Malformed question");
                     return;
-                } else if (Integer.parseInt(tokens[FOUR]) > 0) {
+                } else if (Integer.parseInt(tokens[four]) > 0) {
                     System.out.println("Invalid penalty for " + tokens[0]);
                     return;
-                } else if (Integer.parseInt(tokens[2]) > FOUR) {
+                } else if (Integer.parseInt(tokens[2]) > four) {
                     System.out.println(
                         "Error! Correct answer choice number is out of range for "
                         + tokens[0]);
                     return;
-                } else if (Integer.parseInt(tokens[THREE]) < 0) {
+                } else if (Integer.parseInt(tokens[three]) < 0) {
                     System.out.println("Invalid max marks for " + tokens[0]);
                     return;
                 }
                 questiontext[count] = new Question(tokens[0], choice,
-                    Integer.parseInt(tokens[2]), Integer.parseInt(tokens[THREE]),
-                    Integer.parseInt(tokens[FOUR]));
+                    Integer.parseInt(tokens[2]),
+                    Integer.parseInt(tokens[three]),
+                    Integer.parseInt(tokens[four]));
                 count += 1;
             }
             System.out.println(q + " are added to the quiz");
