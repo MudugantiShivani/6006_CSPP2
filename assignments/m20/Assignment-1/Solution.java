@@ -126,7 +126,7 @@ class Question {
     public String toString(String[] choice) {
         String s = "";
         int i;
-        for(i=0;i<choice.length;i++) {
+        for(i=0;i<choice.length-1;i++) {
         	s+=choice[i] + "\t";
         }
         s+=choice[i];
