@@ -38,16 +38,17 @@ class Question {
      *
      * @param      question1       The question 1
      * @param      choices1        The choices 1
-     * @param      correctAnswer The correct answer 1
-     * @param      maxMarks      The maximum marks 1
+     * @param      correctAnswer1 The correct answer 1
+     * @param      maxMarks1     The maximum marks 1
      * @param      penalty1        The penalty 1
      */
     Question(final String question1, final String[] choices1,
-             final int correctAnswer, final int maxMarks, final int penalty1) {
+             final int correctAnswer1, final int maxMarks1,
+             final int penalty1) {
         this.questiontext = question1;
         this.choices = choices1;
-        this.correctAnswer = correctAnswer;
-        this.maxMarks = maxMarks;
+        this.correctAnswer = correctAnswer1;
+        this.maxMarks = maxMarks1;
         this.penalty = penalty1;
 
     }
@@ -198,11 +199,11 @@ public final class Solution {
     /**
      * {initialisng the int}.
      */
-    final private static int ten = 20;
+    final static int Ten = 20;
     /**
      * { array for question text }.
      */
-    private static Question[] questiontext = new Question[ten];
+    private static Question[] questiontext = new Question[Ten];
     /**
      * { count variable }.
      */
