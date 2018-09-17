@@ -198,7 +198,7 @@ public final class Solution {
     /**
      * {initialisng the int}.
      */
-    private static int TWENTY = 20;
+    final private static int TWENTY = 20;
     /**
      * { array for question text }.
      */
@@ -279,7 +279,7 @@ public final class Solution {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
-        int FIVE = 5, FOUR = 4, THREE = 3;
+        final int FIVE = 5, FOUR = 4, THREE = 3;
         Question question;
         if (q == 0) {
             System.out.println("Quiz does not have questions");
