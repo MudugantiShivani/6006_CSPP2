@@ -199,7 +199,7 @@ public final class Solution {
     /**
      * {initialisng the int}.
      */
-    private static int ten = 20;
+    private static final int ten = 20;
     /**
      * { array for question text }.
      */
@@ -301,7 +301,7 @@ public final class Solution {
                     return;
                 } else if (Integer.parseInt(tokens[2]) > four) {
                     System.out.println(
-                        "Error! Correct answer choice number is out of range for "
+        "Error! Correct answer choice number is out of range for "
                         + tokens[0]);
                     return;
                 } else if (Integer.parseInt(tokens[three]) < 0) {
