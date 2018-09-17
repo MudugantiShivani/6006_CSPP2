@@ -199,11 +199,11 @@ public final class Solution {
     /**
      * {initialisng the int}.
      */
-    private static int Ten = 20;
+    private static int ten = 20;
     /**
      * { array for question text }.
      */
-    private static Question[] questiontext = new Question[Ten];
+    private static Question[] questiontext = new Question[ten];
     /**
      * { count variable }.
      */
