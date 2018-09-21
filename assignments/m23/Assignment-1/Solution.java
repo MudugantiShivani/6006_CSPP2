@@ -74,8 +74,8 @@ public final class Solution {
             return;
         }
         String folder = s.nextLine();
-        File file = new File("C:\\Users\\Lenovo\\Desktop\\"
-            + "Git Repo\\6042_CSPP2\\" + "cspp2-assignments\\m23\\" + folder);
+        File file = new File("D:\\CSPP2 SHIVANI\\6006_CSPP2\\assignments\\"
+            + "m23\\" + "Assignment-1\\" + folder);
         String[] str = file.list();
         for (String files : str) {
             String content = fileRead(folder, files);
