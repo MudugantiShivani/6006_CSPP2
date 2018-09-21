@@ -5,13 +5,25 @@ import java.util.Scanner;
 import java.util.HashMap;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
+/**
+ * { class for sloution where we write the main function }.
+ */
 public final class Solution {
-    
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-        
+     /**
+      * { private constructor }.
+      */
     }
-    
+    /**
+     * { This function is used to convert the file to string }.
+     *
+     * @param      fileContent  The file content
+     *
+     * @return     { returns the file with all the lower case letters }.
+     */
     public static String convertString(final String fileContent) {
         String ret = "";
         Pattern p = Pattern.compile("[^0-9_]");
@@ -22,7 +34,13 @@ public final class Solution {
         }
         return ret.toLowerCase();
     }
-    
+    /**
+     * { the function is used to return the hashmap }.
+     *
+     * @param      input  The input
+     *
+     * @return     { returns hashmap }.
+     */
     public static HashMap<String, Integer> generateHashMap(final String input) {
         String[] inputs = input.split(" ");
         HashMap<String, Integer> map = new HashMap<>();
@@ -41,7 +59,16 @@ public final class Solution {
         }
         return map;
     }
-    
+    /**
+     * { This function is to read the folder to compare}.
+     *
+     * @param      folder     The folder
+     * @param      name       The name
+     *
+     * @return     { returns the content }.
+     *
+     * @throws     Exception  { prints the table}.
+     */
     public static String fileRead(final String folder, final String name)
         throws Exception {
         BufferedReader br = new BufferedReader(
@@ -65,7 +92,13 @@ public final class Solution {
         }
         return content;
     }
-    
+    /**
+     * {main class}.
+     *
+     * @param      args       The arguments
+     *
+     * @throws     Exception  { exception_description }
+     */
     public static void main(final String[] args) throws Exception {
         Similarity sim = new Similarity();
         Scanner s = new Scanner(System.in);
