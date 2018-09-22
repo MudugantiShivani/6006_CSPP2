@@ -30,6 +30,15 @@ class Task{
 		public boolean important() {
 			return true;
 		}
+		public boolean urgent() {
+			return true;
+		}
+		public String status() {
+			return status;
+		}
+		public String toString() {
+		return this.title +", "+ this.assignedTo +", "+ this.timeToComplete+", "+this.important+", "+this.urgent+", "+this.status;
+	}
 
 	}
 
