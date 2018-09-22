@@ -58,6 +58,15 @@ class Todoist {
 	public void addTask(Task task1) {
 		taskobjects.add(task1);
 	}
+	public int totalTime4Completion() {
+		int tottime = 0;
+		for (int i = 0; i < taskobjects.size(); i++) {
+			if ((taskobjects.get(i).getStatus()).equals("todo")) {
+				tottime += taskobjects.get(i).getTime();
+			}
+		}
+		return tottime;
+	}
 
 }
 
@@ -92,9 +101,9 @@ public class TodoistMain {
                 //     Task[] tasks = todo.getNextTask(tokens[1], n);
                 //     System.out.println(Arrays.deepToString(tasks));
                 // break;
-                // case "total-time":
-                //     System.out.println(todo.totalTime4Completion());
-                // break;
+                case "total-time":
+                    System.out.println(todo.totalTime4Completion());
+                break;
                 default:
                 break;
             }
