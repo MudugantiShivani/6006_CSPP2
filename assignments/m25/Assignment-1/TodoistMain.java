@@ -28,10 +28,10 @@ class Task{
 			return timeToComplete;
 		}
 		public boolean important() {
-			return true;
+			return important;
 		}
 		public boolean urgent() {
-			return true;
+			return urgent;
 		}
 		public String status() {
 			return status;
