@@ -5,42 +5,70 @@ import java.util.Arrays;
   * write your code below this comment
   */
 class Task{
-	private String title;
-	private String assignedTo;
-	private int timeToComplete;
-	private boolean important;
-	private boolean urgent;
-	private String status;
-	Task(String title, String assignedTo, int timeToComplete, boolean important, boolean urgent, String status) {
+	String title;
+	String assignedTo;
+	int timeToComplete;
+	String important;
+	String urgent;
+	String status;
+	Task(String title, String assignedTo, int timeToComplete, boolean imp, boolean urg, String status) {
 		this.title = title;
 		this.assignedTo = assignedTo;
 		this.timeToComplete = timeToComplete;
-		this.important = important;
-		this.urgent = urgent;
-		this.status = status;}
-		public String title() {
-			return title;
+		if (imp) {
+			this.important = "Important";
+		} else {
+			this.important = "Not Important";
 		}
-		public String assignedTo() {
-			return assignedTo;
+		if (urg) {
+			this.urgent = "Urgent";
+		} else {
+			this.urgent = "Not Urgent";
 		}
-		public int timeToComplete(){
-			return timeToComplete;
-		}
-		public boolean important() {
-			return important;
-		}
-		public boolean urgent() {
-			return urgent;
-		}
-		public String status() {
-			return status;
-		}
-		public String toString() {
-		return this.title +", "+ this.assignedTo +", "+ this.timeToComplete+", "+this.important+", "+this.urgent+", "+this.status;
+		this.status = status;
 	}
+	public String getTitle() {
+		return this.title;
+	}
+	public String getassignedTo() {
+		return this.assignedTo;
+	}
+	public int getTime() {
+		return this.timeToComplete;
+	}
+	public String getImportant() {
+		return this.important;
+	}
+	public String getUrgent() {
+		return this.urgent;
+	}
+	public String getStatus() {
+		return this.status;
+	}
+	public String toString() {
+		String s = "";
+		s += this.title + ", ";
+		s += this.assignedTo + ", ";
+		s += this.timeToComplete + ", ";
+		s += this.important + ", ";
+		s += this.urgent + ", ";
+		s += this.status;
+		return s;
+	}
+	public void totoString() {
+		String s = "";
+		s += this.title + ", ";
+		s += this.assignedTo + ", ";
+		s += this.timeToComplete + ", ";
+		s += this.important + ", ";
+		s += this.urgent + ", ";
+		s += this.status;
+		System.out.println(s);
+	}
+	}
+class Todoist {
 
-	}
+}
 
 /**
  * Class for todoist main.
@@ -51,7 +79,7 @@ public class TodoistMain {
      * Starts a test.
      */
     public static void startTest() {
-        // Todoist todo = new Todoist();
+         //Todoist todo = new Todoist();
         Scanner s = new Scanner(System.in);
         while (s.hasNext()) {
             String[] tokens = s.nextLine().split(",");
