@@ -46,25 +46,19 @@ class Task{
 		return this.status;
 	}
 	public String toString() {
-		String s = "";
-		s += this.title + ", ";
-		s += this.assignedTo + ", ";
-		s += this.timeToComplete + ", ";
-		s += this.important + ", ";
-		s += this.urgent + ", ";
-		s += this.status;
-		return s;
+		return this.title +", "+ this.assignedTo +", "+ this.timeToComplete+", "+this.important+", "+this.urgent+", "+this.status;
+	
 	}
-	public void totoString() {
-		String s = "";
-		s += this.title + ", ";
-		s += this.assignedTo + ", ";
-		s += this.timeToComplete + ", ";
-		s += this.important + ", ";
-		s += this.urgent + ", ";
-		s += this.status;
-		System.out.println(s);
-	}
+	// public void totoString() {
+	// 	String s = "";
+	// 	s += this.title + ", ";
+	// 	s += this.assignedTo + ", ";
+	// 	s += this.timeToComplete + ", ";
+	// 	s += this.important + ", ";
+	// 	s += this.urgent + ", ";
+	// 	s += this.status;
+	// 	System.out.println(s);
+	// }
 	}
 class Todoist {
 
@@ -147,14 +141,27 @@ public class TodoistMain {
      * @throws     Exception  if task inputs are invalid
      */
     public static Task createTask(final String[] tokens) throws Exception {
-        String title = tokens[1];
-        String assignedTo = tokens[2];
-        int timeToComplete = Integer.parseInt(tokens[3]);
-        boolean important = tokens[4].equals("y");
-        boolean urgent = tokens[5].equals("y");
-        String status = tokens[6];
-        return new Task(
-            title, assignedTo, timeToComplete, important, urgent, status);
+		String title = tokens[1];
+		int count = 6;
+		if (title.length() == 0) {
+			count -= 1;
+			throw new Exception("Title not provided");
+		}
+		String assignedTo = tokens[2];
+		int timeToComplete = Integer.parseInt(tokens[3]);
+		if (timeToComplete < 0) {
+			count -= 1;
+			throw new Exception("Invalid timeToComplete " + timeToComplete);
+		}
+		boolean important = tokens[4].equals("y");
+		boolean urgent = tokens[5].equals("y");
+		String status = tokens[6];
+		if (!(status.equals("todo") || status.equals("done"))) {
+			count -= 1;
+			throw new Exception("Invalid status " + status);
+		}
+		return new Task(
+		           title, assignedTo, timeToComplete, important, urgent, status);
     }
 
     /**
