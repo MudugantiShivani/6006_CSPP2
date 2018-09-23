@@ -72,8 +72,8 @@ public final class Solution {
     public static String fileRead(final String folder, final String name)
         throws Exception {
         BufferedReader br = new BufferedReader(
-            new FileReader("D:\\CSPP2 SHIVANI\\6006_CSPP2\\assignments\\m23\\"
-                + "Assignment-1\\"
+            new FileReader("D:\\CSPP2 SHIVANI\\6006_CSPP2\\assignments\\m24\\"
+                + "Bagofwords\\"
                 + folder + "\\" + name));
         String content = "";
         String line;
@@ -108,7 +108,7 @@ public final class Solution {
         }
         String folder = s.nextLine();
         File file = new File("D:\\CSPP2 SHIVANI\\6006_CSPP2\\assignments\\"
-            + "m23\\" + "Assignment-1\\" + folder);
+            + "m24\\" + "Bagofwords\\" + folder);
         String[] str = file.list();
         for (String files : str) {
             String content = fileRead(folder, files);

@@ -35,7 +35,7 @@ public final class Client {
 	}
 
 	public static String fileRead(String folder, String name) throws Exception {
-		BufferedReader br = new BufferedReader(new FileReader("D:\\CSPP2 SHIVANI\\6006_CSPP2\\assignments\\m23\\Assignment-1\\"+folder+"\\"+name));
+		BufferedReader br = new BufferedReader(new FileReader("D:\\CSPP2 SHIVANI\\6006_CSPP2\\assignments\\m24\\Bagofwords\\"+folder+"\\"+name));
 		String content = "";
 		String line;
 		try {
@@ -57,7 +57,7 @@ public final class Client {
 		Similarity sim = new Similarity();
 		Scanner s = new Scanner(System.in);
 		String folder = s.nextLine();
-		File file = new File("D:\\CSPP2 SHIVANI\\6006_CSPP2\\assignments\\m23\\Assignment-1\\"+folder);
+		File file = new File("D:\\CSPP2 SHIVANI\\6006_CSPP2\\assignments\\m24\\Bagofwords\\"+folder);
 		String[] str = file.list();
 		for(String files : str) {
 			String content = fileRead(folder,files);
